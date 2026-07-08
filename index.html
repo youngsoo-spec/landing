@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GetStockLedger — Filing alerts for independent RIAs</title>
+<meta name="description" content="Filing alerts matched to your clients' holdings — and a clean way to show what you did about them. Built for independent RIA firms of 1–15 people. In private development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600;900&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFAF5;
+    --ink:#2A2E2C;
+    --brass:#B08D57;
+    --muted:#8A8D89;
+    --rule:#E4E1D6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Noto Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+  }
+  main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    max-width:640px;
+    width:100%;
+    margin:0 auto;
+    padding:64px 28px;
+  }
+  .monogram{
+    font-family:'Noto Serif',serif;
+    font-weight:900;
+    font-size:44px;
+    letter-spacing:0.01em;
+    line-height:1;
+    display:inline-block;
+  }
+  .monogram .s{color:var(--brass);}
+  .monogram-rule{
+    width:96px;
+    height:2px;
+    background:var(--ink);
+    margin:10px 0 14px;
+  }
+  .wordmark{
+    font-family:'Noto Serif',serif;
+    font-weight:600;
+    font-size:15px;
+    letter-spacing:0.02em;
+    margin-bottom:56px;
+  }
+  h1{
+    font-family:'Noto Serif',serif;
+    font-weight:600;
+    font-size:clamp(24px,4.6vw,32px);
+    line-height:1.35;
+    margin-bottom:20px;
+    text-wrap:balance;
+  }
+  .sub{
+    font-size:16px;
+    color:var(--ink);
+    margin-bottom:44px;
+  }
+  .status{
+    display:inline-block;
+    font-size:11px;
+    font-weight:500;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--brass);
+    border:1px solid var(--brass);
+    padding:7px 14px;
+    margin-bottom:44px;
+  }
+  .partner{
+    border-top:1px solid var(--rule);
+    padding-top:28px;
+    font-size:15px;
+    line-height:1.65;
+    color:var(--ink);
+  }
+  .partner a{
+    color:var(--ink);
+    font-weight:500;
+    text-decoration:underline;
+    text-decoration-color:var(--brass);
+    text-underline-offset:3px;
+  }
+  .partner a:hover{color:var(--brass);}
+  .partner a:focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:3px;
+  }
+  footer{
+    max-width:640px;
+    width:100%;
+    margin:0 auto;
+    padding:0 28px 32px;
+    font-size:12px;
+    color:var(--muted);
+  }
+  @media (prefers-reduced-motion:no-preference){
+    main > *{
+      opacity:0;
+      transform:translateY(6px);
+      animation:rise .5s ease forwards;
+    }
+    main > *:nth-child(2){animation-delay:.05s;}
+    main > *:nth-child(3){animation-delay:.1s;}
+    main > *:nth-child(4){animation-delay:.15s;}
+    main > *:nth-child(5){animation-delay:.2s;}
+    main > *:nth-child(6){animation-delay:.25s;}
+    main > *:nth-child(7){animation-delay:.3s;}
+    @keyframes rise{to{opacity:1;transform:none;}}
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="monogram" aria-hidden="true">G<span class="s">S</span>L</div>
+  <div class="monogram-rule" aria-hidden="true"></div>
+  <div class="wordmark">GetStockLedger</div>
+
+  <h1>Filing alerts matched to your clients&rsquo; holdings &mdash; and a clean way to show what you did about them.</h1>
+
+  <p class="sub">Built for independent RIA firms of 1&ndash;15 people.</p>
+
+  <span class="status">In private development</span>
+
+  <p class="partner">
+    We&rsquo;re working with 3&ndash;5 founding firms to shape the product.<br>
+    If that&rsquo;s you: <a href="mailto:youngsoo@getstockledger.com">youngsoo@getstockledger.com</a>
+  </p>
+</main>
+<footer>&copy; 2026 GetStockLedger</footer>
+</body>
+</html>
